@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Advertising Pioneers - Breaking Barriers & Shaping Culture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .infographic {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 4px solid #e63946;
+        }
+        
+        .header h1 {
+            font-size: 3.2em;
+            color: #1d3557;
+            margin-bottom: 15px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        .header .subtitle {
+            font-size: 1.6em;
+            color: #e63946;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .header .tagline {
+            font-size: 1.2em;
+            color: #457b9d;
+            font-style: italic;
+        }
+        
+        .intro-box {
+            background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+        }
+        
+        .intro-box h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .intro-box p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .pioneers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .pioneer-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 8px solid #457b9d;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .pioneer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .pioneer-card.highlight {
+            border-left-color: #e63946;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+        }
+        
+        .pioneer-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .pioneer-name {
+            font-size: 2em;
+            color: #1d3557;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .pioneer-years {
+            font-size: 1.1em;
+            color: #6c757d;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .pioneer-title {
+            font-size: 1.3em;
+            color: #e63946;
+            font-weight: 600;
+            font-style: italic;
+        }
+        
+        .pioneer-section {
+            margin-bottom: 20px;
+        }
+        
+        .pioneer-section h4 {
+            font-size: 1.2em;
+            color: #1d3557;
+            margin-bottom: 10px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .pioneer-section p {
+            font-size: 1.05em;
+            color: #495057;
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        
+        .pioneer-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .pioneer-section li {
+            padding: 8px 0 8px 25px;
+            position: relative;
+            font-size: 1.05em;
+            color: #495057;
+            line-height: 1.6;
+        }
+        
+        .pioneer-section li:before {
+            content: "▸";
+            position: absolute;
+            left: 5px;
+            color: #e63946;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .quote-box {
+            background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+            color: white;
+            padding: 25px 30px;
+            border-radius: 12px;
+            border-left: 6px solid #e63946;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        
+        .quote-box p {
+            font-size: 1.15em;
+            line-height: 1.6;
+            color: white;
+            margin-bottom: 8px;
+        }
+        
+        .quote-attribution {
+            text-align: right;
+            font-weight: 600;
+            color: #f1faee;
+            font-size: 1em;
+        }
+        
+        .impact-section {
+            background: linear-gradient(135deg, #f1faee 0%, #a8dadc 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .impact-section h3 {
+            font-size: 2em;
+            color: #1d3557;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .impact-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid #e63946;
+        }
+        
+        .impact-item h4 {
+            font-size: 1.4em;
+            color: #1d3557;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .impact-item p {
+            font-size: 1.05em;
+            color: #495057;
+            line-height: 1.7;
+        }
+        
+        .timeline-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border: 3px solid #457b9d;
+        }
+        
+        .timeline-section h3 {
+            font-size: 2em;
+            color: #1d3557;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .timeline-item {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .timeline-year {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #e63946;
+            min-width: 120px;
+            text-align: center;
+        }
+        
+        .timeline-content h4 {
+            font-size: 1.4em;
+            color: #1d3557;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .timeline-content p {
+            font-size: 1.1em;
+            color: #495057;
+            line-height: 1.6;
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+        }
+        
+        .stats-section h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        
+        .stat-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        
+        .legacy-section {
+            background: linear-gradient(135deg, #457b9d 0%, #1d3557 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            color: white;
+            text-align: center;
+        }
+        
+        .legacy-section h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .legacy-section p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 25px;
+        }
+        
+        .legacy-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .legacy-point {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .legacy-point h4 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+        }
+        
+        .footer p {
+            color: #6c757d;
+            font-size: 1em;
+        }
+        
+        @media (max-width: 768px) {
+            .pioneers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .infographic {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .timeline-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .timeline-year {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="infographic">
+        <div class="header">
+            <h1>BLACK ADVERTISING PIONEERS</h1>
+            <p class="subtitle">Breaking Barriers & Shaping Culture</p>
+            <p class="tagline">"Black people are not dark-skinned white people" - Tom Burrell</p>
+        </div>
+        
+        <div class="intro-box">
+            <h2>Why Their Stories Matter</h2>
+            <p>These trailblazers didn't just break into the advertising industry—they fundamentally changed how brands communicate with Black consumers. They proved that authentic representation wasn't just morally right, it was good business. Their legacy continues to shape advertising today.</p>
+        </div>
+        
+        <div class="pioneers-grid">
+            <div class="pioneer-card highlight">
+                <div class="pioneer-header">
+                    <div class="pioneer-name">Tom Burrell</div>
+                    <div class="pioneer-years">1939 - Present</div>
+                    <div class="pioneer-title">"The Father of Black-Targeted Advertising"</div>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🎯 Revolutionary Insight</h4>
+                    <p>Founded Burrell Communications in Chicago, 1971 - the first Black-owned agency to break into the top tier of advertising.</p>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>💡 Core Philosophy</h4>
+                    <ul>
+                        <li>Black consumers have distinct cultural values and experiences</li>
+                        <li>Authentic representation requires cultural understanding</li>
+                        <li>Created "positive realism" - showing Black life authentically</li>
+                    </ul>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🏆 Major Achievements</h4>
+                    <ul>
+                        <li>McDonald's "Calvin" campaign - authentic Black families</li>
+                        <li>Coca-Cola campaigns featuring Black culture</li>
+                        <li>Proved culturally-specific advertising drives results</li>
+                        <li>Mentored generations of Black ad professionals</li>
+                    </ul>
+                </div>
+                
+                <div class="quote-box">
+                    <p>"Black people are not dark-skinned white people."</p>
+                    <div class="quote-attribution">— Tom Burrell</div>
+                </div>
+            </div>
+            
+            <div class="pioneer-card">
+                <div class="pioneer-header">
+                    <div class="pioneer-name">Caroline Jones</div>
+                    <div class="pioneer-years">1942 - 2001</div>
+                    <div class="pioneer-title">"Trailblazing Woman in Advertising"</div>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🎯 Breaking Multiple Barriers</h4>
+                    <p>First Black woman to own a major advertising agency in the U.S. (Caroline Jones Advertising, 1977)</p>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>💪 Triple Challenge</h4>
+                    <ul>
+                        <li>Black in a white-dominated industry</li>
+                        <li>Woman in a male-dominated field</li>
+                        <li>Business owner when few women owned agencies</li>
+                    </ul>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🏆 Major Impact</h4>
+                    <ul>
+                        <li>Worked with Anheuser-Busch, Pillsbury, Sears</li>
+                        <li>Authored influential book "Make It Happen"</li>
+                        <li>Advocated for diversity in leadership</li>
+                        <li>Mentored Black women in advertising</li>
+                    </ul>
+                </div>
+                
+                <div class="quote-box">
+                    <p>"Success is not about being the first. It's about opening doors so you're not the last."</p>
+                    <div class="quote-attribution">— Caroline Jones (spirit of her work)</div>
+                </div>
+            </div>
+            
+            <div class="pioneer-card">
+                <div class="pioneer-header">
+                    <div class="pioneer-name">Clarence Holte</div>
+                    <div class="pioneer-years">1920s - 2008</div>
+                    <div class="pioneer-title">"The Quiet Pioneer"</div>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🎯 Early Visionary</h4>
+                    <p>Founded Zebra Associates in 1969 (later UniWorld Group) - among the first Black-owned advertising agencies</p>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>💡 Key Contributions</h4>
+                    <ul>
+                        <li>Pioneered "ethnic marketing" concept</li>
+                        <li>Proved Black buying power worth targeting</li>
+                        <li>Showed Black Americans as aspirational and successful</li>
+                        <li>Built foundation for multicultural marketing</li>
+                    </ul>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🏆 Historic Context</h4>
+                    <ul>
+                        <li>Started during Civil Rights movement</li>
+                        <li>Advertising was almost entirely white</li>
+                        <li>Created campaigns for AT&T, Ford, Quaker Oats</li>
+                        <li>UniWorld became a leading multicultural agency</li>
+                    </ul>
+                </div>
+                
+                <div class="quote-box">
+                    <p>"We don't want to be invisible anymore. We deserve to be seen, heard, and valued."</p>
+                    <div class="quote-attribution">— Clarence Holte (spirit of his mission)</div>
+                </div>
+            </div>
+            
+            <div class="pioneer-card">
+                <div class="pioneer-header">
+                    <div class="pioneer-name">Roy Eaton</div>
+                    <div class="pioneer-years">1930 - 2023</div>
+                    <div class="pioneer-title">"The Renaissance Man of Advertising"</div>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🎯 Dual Excellence</h4>
+                    <p>First Black Vice President at a major agency (Young & Rubicam) AND accomplished classical pianist/composer</p>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🎵 Musical Innovation</h4>
+                    <ul>
+                        <li>Juilliard-trained classical musician</li>
+                        <li>Composed iconic jingles for major brands</li>
+                        <li>Brought musical sophistication to advertising</li>
+                        <li>Created memorable Coca-Cola, Gillette campaigns</li>
+                    </ul>
+                </div>
+                
+                <div class="pioneer-section">
+                    <h4>🏆 Cultural Impact</h4>
+                    <ul>
+                        <li>Proved talent transcends race</li>
+                        <li>Opened doors for Black creatives in agencies</li>
+                        <li>Demonstrated value of diverse perspectives</li>
+                        <li>His jingles became part of American culture</li>
+                    </ul>
+                </div>
+                
+                <div class="quote-box">
+                    <p>"Music is a universal language. So is great advertising. Both connect us to our humanity."</p>
+                    <div class="quote-attribution">— Roy Eaton (spirit of his philosophy)</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline-section">
+            <h3>⏳ Historical Timeline: The Journey to Recognition</h3>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">1960s</div>
+                <div class="timeline-content">
+                    <h4>The Invisible Market</h4>
+                    <p>Black consumers were largely absent from mainstream advertising. When depicted, portrayals were often stereotypical. Less than 1% of advertising professionals were Black.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">1969</div>
+                <div class="timeline-content">
+                    <h4>The Beginning</h4>
+                    <p>Clarence Holte founds Zebra Associates (later UniWorld), one of the first Black-owned advertising agencies. The doors begin to crack open.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">1971</div>
+                <div class="timeline-content">
+                    <h4>The Revolution</h4>
+                    <p>Tom Burrell launches Burrell Communications with a radical philosophy: "Black people are not dark-skinned white people." The industry would never be the same.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">1977</div>
+                <div class="timeline-content">
+                    <h4>Breaking Gender Barriers</h4>
+                    <p>Caroline Jones establishes her own agency, becoming the first Black woman to own a major advertising firm. A milestone for both racial and gender equity.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Today</div>
+                <div class="timeline-content">
+                    <h4>The Continuing Journey</h4>
+                    <p>Their legacy lives on, but the work continues. Black professionals still make up only 7% of the advertising workforce. The next generation must carry the torch forward.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <h3>📊 The Business Case They Built</h3>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">$1.6T</span>
+                    <div class="stat-label">Black Consumer Buying Power Today (2023)</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">47%</span>
+                    <div class="stat-label">Of Black consumers prefer brands that feature people who look like them</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">7%</span>
+                    <div class="stat-label">Current Black representation in advertising workforce (still underrepresented)</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">&lt;1%</span>
+                    <div class="stat-label">Of advertising spend goes to Black-owned agencies today</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="impact-section">
+            <h3>🌟 Their Lasting Impact on Advertising</h3>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <h4>Changed Industry Standards</h4>
+                    <p>Established that authentic cultural representation drives business results and brand loyalty</p>
+                </div>
+                <div class="impact-item">
+                    <h4>Opened Career Pathways</h4>
+                    <p>Created opportunities and mentored generations of Black advertising professionals</p>
+                </div>
+                <div class="impact-item">
+                    <h4>Shifted Cultural Narratives</h4>
+                    <p>Challenged stereotypes and showed multidimensional, positive representations of Black life</p>
+                </div>
+                <div class="impact-item">
+                    <h4>Built Economic Power</h4>
+                    <p>Proved Black-owned businesses could compete at the highest levels and succeed</p>
+                </div>
+                <div class="impact-item">
+                    <h4>Created Industry Frameworks</h4>
+                    <p>Multicultural marketing is now a standard discipline because of their pioneering work</p>
+                </div>
+                <div class="impact-item">
+                    <h4>Inspired Future Generations</h4>
+                    <p>Showed what's possible when talent meets opportunity and perseverance</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="legacy-section">
+            <h3>🔥 The Torch Is Passed to You</h3>
+            <p>These pioneers fought for representation, authenticity, and opportunity. They opened doors that were locked. They demanded to be seen, heard, and valued. Now it's your turn.</p>
+            <p><strong>How will you honor their legacy? How will you continue the work they started?</strong></p>
+            
+            <div class="legacy-points">
+                <div class="legacy-point">
+                    <h4>Create Authentically</h4>
+                </div>
+                <div class="legacy-point">
+                    <h4>Demand Diversity</h4>
+                </div>
+                <div class="legacy-point">
+                    <h4>Mentor Others</h4>
+                </div>
+                <div class="legacy-point">
+                    <h4>Challenge Stereotypes</h4>
+                </div>
+                <div class="legacy-point">
+                    <h4>Build Equity</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Created for HBCU Advertising Course | Educational Use | Honoring the Legacy of Black Advertising Pioneers</p>
+        </div>
+    </div>
+</body>
+</html>
